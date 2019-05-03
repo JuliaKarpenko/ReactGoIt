@@ -24,7 +24,7 @@ class App extends Component {
   updateWeather () {
     
     const { cityName, numForecastDay } = this.state;
-    const KEY = `3de754b0efc54c0cb3983448192204`;
+    const KEY = `xxx`;
     const URL = `http://api.apixu.com/v1/forecast.json?key=${KEY}&q=${cityName}&days=${numForecastDay}`;
     axios.get(URL)
       .then(response => {
@@ -110,7 +110,7 @@ class App extends Component {
     .then(data => {
       console.log(data);
       this.setState({
-        bgIMG: data.hits[0].largeImageURL
+        bgIMG: data.hits[1].largeImageURL
       })
     })
 
@@ -121,7 +121,8 @@ class App extends Component {
     const { isLoading, location, cityName, current, text, iconURL, forecastDays, lat, lng, country, bgIMG } = this.state;
     console.log(this.state);
     return (
-      <div className={style.bg} style={{backgroundImage: `url(${bgIMG})`, backgroundSize: 'cover'}}>
+      <div className={style.bg} >
+      {/* style={{backgroundImage: `url(${bgIMG})`, backgroundSize: 'cover'}} */}
         {isLoading ?
           <div>
             <div className={style.wrapLoader}>
