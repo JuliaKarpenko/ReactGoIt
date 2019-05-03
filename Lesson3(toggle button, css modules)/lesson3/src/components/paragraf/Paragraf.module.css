@@ -1,0 +1,6 @@
+@value Font-size from '../App.module.css';
+
+.paragraf {
+    composes: title from '../App.module.css';
+    font-size: Font-size;
+}

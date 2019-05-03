@@ -1,0 +1,39 @@
+
+.wrapper-form {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.32);
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    width: 275px;
+    height: 335px;
+    background-color: #fff;
+    border-radius: 2px;
+    margin-top: 70px;
+}
+
+.button {
+    background-color: #f64e00;
+    border: 1px solid #f64e00;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px 35px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    display: block;
+    flex: 2;
+}

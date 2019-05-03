@@ -1,0 +1,12 @@
+@value Font-size: 14px;
+
+.title {
+    color: red;
+    font-size: 30px;
+}
+
+.text {
+    composes: title;
+    color: blue;
+}
+
